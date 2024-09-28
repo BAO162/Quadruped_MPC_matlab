@@ -54,6 +54,9 @@ https://www.bilibili.com/video/BV13ntQebEPy/?spm_id_from=333.999.0.0&vd_source=e
 则点击webots运行仿真或ctrl+2即可开始仿真，算法代码在controllers\my_BIGDOG4_MPC下 用matlab可以查看修改
 
 
+原始URDF:Quadruped_MPC_matlab\protos\robot-Bigdog-A.SLDASM\urdf\robot-Bigdog-A.SLDASM.urdf
+
+
 4.介绍
 
 
