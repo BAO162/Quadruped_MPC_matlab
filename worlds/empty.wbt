@@ -1,0 +1,1349 @@
+#VRML_SIM R2021b utf8
+WorldInfo {
+  basicTimeStep 2
+  defaultDamping Damping {
+  }
+}
+Viewpoint {
+  orientation 0.1171720878569018 0.5163162150947571 0.8483444276103186 2.6545273439739754
+  position 0.8903892175069712 2.0374957857524754 0.9680296317675701
+  follow "Bigdog"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+  rotation 1 0 0 1.5707996938995747
+  size 80 1.5
+}
+DEF rocks Solid {
+  translation 0.3 0 0.3
+  children [
+    DEF rocks Group {
+      children [
+        Rock10cm {
+          translation 0.8 0 -0.35
+        }
+        Rock10cm {
+          translation 0.85 -0.2 -0.35
+          name "rock 10 cm(1)"
+        }
+        Rock10cm {
+          translation 0.8 0.2 -0.35
+          name "rock 10 cm(2)"
+        }
+        Rock10cm {
+          translation 1.5 0.15 -0.35
+          name "rock 10 cm(3)"
+        }
+        Rock10cm {
+          translation 1.2 0 -0.35
+          name "rock 10 cm(4)"
+        }
+        Rock10cm {
+          translation 1.5 0 -0.35
+          name "rock 10 cm(5)"
+        }
+        Rock10cm {
+          translation 1.8 0 -0.35
+          name "rock 10 cm(6)"
+        }
+        Rock10cm {
+          translation 2 0 -0.35
+          name "rock 10 cm(7)"
+        }
+        Rock10cm {
+          translation 1 0.3 -0.35
+          rotation 0 1 0 0.3926996938995747
+          name "rock 10 cm(8)"
+        }
+        Rock10cm {
+          translation 1 -0.3 -0.35
+          rotation 0 1 0 0.3926996938995747
+          name "rock 10 cm(9)"
+        }
+        Rock10cm {
+          translation 1.2 0.2 -0.35
+          rotation 0 1 0 0.2617996938995747
+          name "rock 10 cm(10)"
+        }
+        Rock17cm {
+          translation 1 0 -0.4
+        }
+        Rock17cm {
+          translation 1.5 0.2 -0.42
+          rotation 0 0 1 0.9162996938995747
+          name "rock 17 cm(1)"
+        }
+        Rock17cm {
+          translation 1.1 -0.2 -0.4
+          name "rock 17 cm(2)"
+        }
+        Rock17cm {
+          translation 2 0.3 -0.4
+          rotation 0 1 0 0.3926996938995747
+          name "rock 17 cm(3)"
+        }
+        Rock17cm {
+          translation 1.3 -0.3 -0.4
+          rotation 0 1 0 -0.3926996938995747
+          name "rock 17 cm(4)"
+        }
+        Rock17cm {
+          translation 1.85 -0.3 -0.4
+          rotation 0 1 0 0.3926996938995747
+          name "rock 17 cm(5)"
+        }
+        Rock17cm {
+          translation 1.5 -0.2 -0.4
+          rotation 0 1 0 0.3926996938995747
+          name "rock 17 cm(6)"
+        }
+        Rock17cm {
+          translation 1.9 0.2 -0.4
+          rotation 0 1 0 0.3926996938995747
+          name "rock 17 cm(7)"
+        }
+        Rock17cm {
+          translation 2.1 -0.2 -0.42
+          rotation 0 -1 0 -0.3926996938995747
+          name "rock 17 cm(8)"
+        }
+        Rock17cm {
+          translation 2 -0.2 -0.4
+          rotation 0 -1 0 -0.3926996938995747
+          name "rock 17 cm(11)"
+        }
+        Rock17cm {
+          translation 1.5 0 -0.4
+          rotation 0 0 1 -0.6544996938995746
+          name "rock 17 cm(9)"
+        }
+        Rock17cm {
+          translation 2.2 0.2 -0.42
+          rotation 0 0 1 0.7853996938995746
+          name "rock 17 cm(10)"
+        }
+      ]
+    }
+  ]
+  name "solid(1)"
+}
+Solid {
+  translation 0.2 2 -5
+  rotation 0 1 0 -0.13090030610042527
+  children [
+    Floor {
+      translation 0 0 -0.329
+      rotation 1 0 0 1.5707996938995747
+      name "floor(1)"
+      size 10 1.5
+    }
+  ]
+}
+DEF dan_bian_qiao Solid {
+  translation 2.3 0 0.326
+  children [
+    Solid {
+      translation 1.5 -0.15 -0.35
+      children [
+        DEF s1 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.6 0.1 0.9
+            }
+          }
+          geometry Box {
+            size 0.3 0.2 0.1
+          }
+        }
+      ]
+      name "solid(1)"
+      boundingObject USE s1
+    }
+    Solid {
+      translation 1.8 0.15 -0.35
+      children [
+        DEF s3 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.6 0.1 0.9
+            }
+          }
+          geometry Box {
+            size 0.3 0.2 0.1
+          }
+        }
+      ]
+      name "solid(3)"
+      boundingObject USE s3
+    }
+    Solid {
+      translation 1 0.15 -0.35
+      children [
+        DEF s2 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.6 0.1 0.9
+            }
+          }
+          geometry Box {
+            size 0.3 0.2 0.1
+          }
+        }
+      ]
+      name "solid(2)"
+      boundingObject USE s2
+    }
+    Solid {
+      translation 2.3 -0.15 -0.35
+      children [
+        DEF s4 Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.6 0.1 0.9
+            }
+          }
+          geometry Box {
+            size 0.3 0.2 0.1
+          }
+        }
+      ]
+      name "solid4"
+      boundingObject USE s4
+    }
+  ]
+  name "solid(4)"
+}
+DEF can Solid {
+  translation 0 0.4 0
+  children [
+    Group {
+      children [
+        Solid {
+          translation 5 0 -0.2
+          children [
+            DEF BOX8 Shape {
+              geometry Box {
+                size 0.2 0.2 0.2
+              }
+            }
+          ]
+          name "solid(2)"
+          boundingObject USE BOX8
+        }
+        DEF CAN Transform {
+          translation 5 0 0
+          rotation 1 0 0 1.5708003061004252
+          children [
+            Can {
+              translation 0 0 0
+              rotation 0 1 0 0.7854003061004253
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  name "solid(5)"
+}
+DEF can Solid {
+  translation 0 -0.4 0
+  children [
+    Group {
+      children [
+        Solid {
+          translation 5 0 -0.2
+          children [
+            DEF BOX8 Shape {
+              geometry Box {
+                size 0.2 0.2 0.2
+              }
+            }
+          ]
+          name "solid(2)"
+          boundingObject USE BOX8
+        }
+        DEF CAN Transform {
+          translation 5 0 0
+          rotation 1 0 0 1.5708003061004252
+          children [
+            Can {
+              translation 0 0 0
+              rotation 0 1 0 0.7854003061004253
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  name "solid(2)"
+}
+Robot {
+  translation 0 0 0.329
+  rotation 0 0 1 0
+  children [
+    DEF BODY_BOX Shape {
+      appearance Appearance {
+        material Material {
+        }
+      }
+      geometry Box {
+        size 0.25 0.16 0.11
+      }
+    }
+    DEF accelerometer Accelerometer {
+      children [
+        Shape {
+          geometry Box {
+            size 0.1 0.1 0.1
+          }
+        }
+      ]
+    }
+    DEF IMU InertialUnit {
+      rotation 1 0 0 0
+      children [
+        Shape {
+          geometry Capsule {
+            height 0.02
+            radius 0.05
+          }
+        }
+      ]
+      name "imu"
+    }
+    DEF gps GPS {
+      children [
+        Shape {
+          geometry Box {
+            size 0.05 0.05 0.05
+          }
+        }
+      ]
+    }
+    Gyro {
+      children [
+        Shape {
+          geometry Box {
+            size 0.05 0.05 0.05
+          }
+        }
+      ]
+    }
+    DEF camera Transform {
+      rotation 1 0 0 1.5707996938995747
+      children [
+        Camera {
+          translation 0.3 0 0
+          rotation 0 1 0 -1.5707996938995747
+          width 1080
+          height 720
+          recognition Recognition {
+            maxRange 2
+            frameThickness 3
+            segmentation TRUE
+          }
+        }
+      ]
+    }
+    DEF RGBD RangeFinder {
+      translation 0.27 0 0
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.8 0 0
+            }
+          }
+          geometry Box {
+            size 0.05 0.2 0.05
+          }
+        }
+      ]
+      name "RGBD"
+      fieldOfView 1.5
+      width 512
+      height 512
+    }
+    Shape {
+      appearance DEF BODY_material PBRAppearance {
+        baseColor 0.75294 0.75294 0.75294
+        roughness 1
+        metalness 0
+      }
+      geometry DEF BODY Mesh {
+        url [
+          "D:/WEBOTDEMO-BJW/my_project27-mpc-10+deepcamera_20240916newmodel/my_project4/protos/robot-Bigdog-A.SLDASM/meshes/BODY.STL"
+        ]
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        anchor 0.1393 -0.061 0
+      }
+      device [
+        DEF FR_hip_motor RotationalMotor {
+          name "FR_hip_motor"
+          maxVelocity 50
+          minPosition -3.14
+          maxPosition 3.14
+          maxTorque 100
+        }
+        DEF FR_hip_position_sensor PositionSensor {
+          name "FR_hip_position_sensor"
+        }
+      ]
+      endPoint Solid {
+        translation 0.1393 -0.061 0
+        rotation 1 0 0 0
+        children [
+          DEF FR_1_C Transform {
+            translation 0.065 0.01 0
+            children [
+              Shape {
+                appearance PBRAppearance {
+                  transparency 1
+                }
+                geometry Cylinder {
+                  height 0.03
+                  radius 0.05
+                }
+              }
+            ]
+          }
+          Shape {
+            appearance DEF FR_1_material PBRAppearance {
+              baseColor 0.75294 0.75294 0.75294
+              roughness 1
+              metalness 0
+            }
+            geometry DEF FR_1 Mesh {
+              url [
+                "D:/WEBOTDEMO-BJW/my_project27-mpc-10+deepcamera_20240916newmodel/my_project4/protos/robot-Bigdog-A.SLDASM/meshes/FR_1.STL"
+              ]
+            }
+          }
+          HingeJoint {
+            jointParameters HingeJointParameters {
+              axis 0 -1 0
+              anchor 0.065 -0.0115 0
+            }
+            device [
+              RotationalMotor {
+                name "FR_leg_motor"
+                maxVelocity 50
+                minPosition -3.14
+                maxPosition 3.14
+                maxTorque 100
+              }
+              PositionSensor {
+                name "FR_leg_position_sensor"
+              }
+            ]
+            endPoint Solid {
+              translation 0.065 -0.0115 0
+              rotation 0 -1 0 0
+              children [
+                DEF FR_2_C Transform {
+                  translation -0.07 -0.08 -0.06
+                  rotation 0 1 0 -0.916
+                  children [
+                    Shape {
+                      appearance PBRAppearance {
+                        transparency 1
+                      }
+                      geometry Box {
+                        size 0.15 0.02 0.02
+                      }
+                    }
+                  ]
+                }
+                Shape {
+                  appearance DEF FR_2_material PBRAppearance {
+                    baseColor 0.75294 0.75294 0.75294
+                    roughness 1
+                    metalness 0
+                  }
+                  geometry DEF FR_2 Mesh {
+                    url [
+                      "D:/WEBOTDEMO-BJW/my_project27-mpc-10+deepcamera_20240916newmodel/my_project4/protos/robot-Bigdog-A.SLDASM/meshes/FR_2.STL"
+                    ]
+                  }
+                }
+                HingeJoint {
+                  jointParameters HingeJointParameters {
+                    axis 0 -1 0
+                    anchor -0.1247 -0.0572 -0.14861
+                  }
+                  device [
+                    RotationalMotor {
+                      name "FR_foot_motor"
+                      maxVelocity 50
+                      minPosition -3.14
+                      maxPosition 3.14
+                      maxTorque 100
+                    }
+                    PositionSensor {
+                      name "FR_foot_position_sensor"
+                    }
+                  ]
+                  endPoint Solid {
+                    translation -0.12469236450004396 -0.05720006795064264 -0.1486332252641701
+                    rotation -0.0014098887840423614 0.9999544000364389 0.009445107801511326 0.0004710279446591294
+                    children [
+                      DEF FR_3_C Transform {
+                        translation 0.05 -0.02 -0.06
+                        rotation 0 1 0 0.7854003061004253
+                        children [
+                          Shape {
+                            appearance PBRAppearance {
+                              transparency 1
+                            }
+                            geometry Box {
+                              size 0.12 0.02 0.02
+                            }
+                          }
+                        ]
+                      }
+                      Shape {
+                        appearance DEF FR_3_material PBRAppearance {
+                          baseColor 0.75294 0.75294 0.75294
+                          roughness 1
+                          metalness 0
+                        }
+                        geometry DEF FR_3 Mesh {
+                          url [
+                            "D:/WEBOTDEMO-BJW/my_project27-mpc-10+deepcamera_20240916newmodel/my_project4/protos/robot-Bigdog-A.SLDASM/meshes/FR_3.STL"
+                          ]
+                        }
+                      }
+                      Solid {
+                        translation 0.11222 -0.0163 -0.14758
+                        rotation 0 0 1 0
+                        children [
+                          DEF FR_TOUCH TouchSensor {
+                            children [
+                              DEF FR_BALL_T Shape {
+                                appearance Appearance {
+                                }
+                                geometry Sphere {
+                                  radius 0.03
+                                }
+                              }
+                            ]
+                            name "FR_TOUCH"
+                            boundingObject USE FR_BALL_T
+                          }
+                          Shape {
+                            appearance DEF FR_4_material PBRAppearance {
+                              roughness 1
+                              metalness 0
+                            }
+                            geometry DEF FR_4 Mesh {
+                              url [
+                                "D:/WEBOTDEMO-BJW/my_project27-mpc-10+deepcamera_20240916newmodel/my_project4/protos/robot-Bigdog-A.SLDASM/meshes/FR_4.STL"
+                              ]
+                            }
+                          }
+                          DEF FR_BALL Shape {
+                            appearance Appearance {
+                            }
+                            geometry Sphere {
+                              radius 0.03
+                            }
+                          }
+                        ]
+                        name "FR_4"
+                        boundingObject USE FR_BALL
+                        physics Physics {
+                          density -1
+                          mass 0.034657
+                          centerOfMass [
+                            0.001777 0 -0.011458
+                          ]
+                          inertiaMatrix [
+                            5.6404e-06 8.2173e-06 6.9941e-06
+                            1.8541e-09 1.9984e-07 2.6192e-10
+                          ]
+                        }
+                      }
+                    ]
+                    name "FR_3"
+                    boundingObject USE FR_3_C
+                    physics Physics {
+                      density -1
+                      mass 0.10582
+                      centerOfMass [
+                        0.052368 -0.016301 -0.063878
+                      ]
+                      inertiaMatrix [
+                        0.00037 0.00061 0.00025
+                        0 0.00029 0
+                      ]
+                    }
+                  }
+                }
+              ]
+              name "FR_2"
+              boundingObject USE FR_2_C
+              physics Physics {
+                density -1
+                mass 1.1104
+                centerOfMass [
+                  -0.033941 -0.061444 -0.031612
+                ]
+                inertiaMatrix [
+                  0.00351 0.00607 0.00358
+                  -0.00045 -0.00244 -0.00042
+                ]
+              }
+            }
+          }
+        ]
+        name "FR_1"
+        boundingObject USE FR_1_C
+        physics Physics {
+          density -1
+          mass 0.33434
+          centerOfMass [
+            0.061252 0.008521 0.000312
+          ]
+          inertiaMatrix [
+            0.00024 0.00041 0.00029
+            -1e-05 0 0
+          ]
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        anchor 0.1393 0.061 0
+      }
+      device [
+        DEF FL_hip_motor RotationalMotor {
+          name "FL_hip_motor"
+          maxVelocity 50
+          minPosition -3.14
+          maxPosition 3.14
+          maxTorque 100
+        }
+        PositionSensor {
+          name "FL_hip_position_sensor"
+        }
+      ]
+      endPoint Solid {
+        translation 0.1393 0.061 0
+        rotation 1 0 0 0
+        children [
+          DEF FL_1_C Transform {
+            translation 0.065 -0.01 0
+            children [
+              Shape {
+                appearance PBRAppearance {
+                  transparency 1
+                }
+                geometry Cylinder {
+                  height 0.03
+                  radius 0.05
+                }
+              }
+            ]
+          }
+          Shape {
+            appearance DEF FL_1_material PBRAppearance {
+              baseColor 0.75294 0.75294 0.75294
+              roughness 1
+              metalness 0
+            }
+            geometry DEF FL_1 Mesh {
+              url [
+                "D:/WEBOTDEMO-BJW/my_project27-mpc-10+deepcamera_20240916newmodel/my_project4/protos/robot-Bigdog-A.SLDASM/meshes/FL_1.STL"
+              ]
+            }
+          }
+          HingeJoint {
+            jointParameters HingeJointParameters {
+              axis 0 -1 0
+              anchor 0.065 0.0115 0
+            }
+            device [
+              RotationalMotor {
+                name "FL_leg_motor"
+                maxVelocity 50
+                minPosition -3.14
+                maxPosition 3.14
+                maxTorque 100
+              }
+              PositionSensor {
+                name "FL_leg_position_sensor"
+              }
+            ]
+            endPoint Solid {
+              translation 0.065 0.0115 0
+              rotation 0 -1 0 0
+              children [
+                DEF FL_2_C Transform {
+                  translation -0.07 0.08 -0.06
+                  rotation 0 1 0 -0.9162996938995747
+                  children [
+                    Shape {
+                      appearance PBRAppearance {
+                        transparency 1
+                      }
+                      geometry Box {
+                        size 0.15 0.02 0.02
+                      }
+                    }
+                  ]
+                }
+                Shape {
+                  appearance DEF FL_2_material PBRAppearance {
+                    baseColor 0.75294 0.75294 0.75294
+                    roughness 1
+                    metalness 0
+                  }
+                  geometry DEF FL_2 Mesh {
+                    url [
+                      "D:/WEBOTDEMO-BJW/my_project27-mpc-10+deepcamera_20240916newmodel/my_project4/protos/robot-Bigdog-A.SLDASM/meshes/FL_2.STL"
+                    ]
+                  }
+                }
+                HingeJoint {
+                  jointParameters HingeJointParameters {
+                    axis 0 -1 0
+                    anchor -0.1247 0.0572 -0.14861
+                  }
+                  device [
+                    RotationalMotor {
+                      name "FL_foot_motor"
+                      maxVelocity 50
+                      minPosition -3.14
+                      maxPosition 3.14
+                      maxTorque 100
+                    }
+                    PositionSensor {
+                      name "FL_foot_position_sensor"
+                    }
+                  ]
+                  endPoint Solid {
+                    translation -0.1247 0.0572 -0.14861
+                    rotation 0 -1 0 0
+                    children [
+                      DEF FL_3_C Transform {
+                        translation 0.05 0.02 -0.06
+                        rotation 0 1 0 0.7854003061004253
+                        children [
+                          Shape {
+                            appearance PBRAppearance {
+                              transparency 1
+                            }
+                            geometry Box {
+                              size 0.12 0.02 0.02
+                            }
+                          }
+                        ]
+                      }
+                      Shape {
+                        appearance DEF FL_3_material PBRAppearance {
+                          baseColor 0.75294 0.75294 0.75294
+                          roughness 1
+                          metalness 0
+                        }
+                        geometry DEF FL_3 Mesh {
+                          url [
+                            "D:/WEBOTDEMO-BJW/my_project27-mpc-10+deepcamera_20240916newmodel/my_project4/protos/robot-Bigdog-A.SLDASM/meshes/FL_3.STL"
+                          ]
+                        }
+                      }
+                      Solid {
+                        translation 0.11238 0.0163 -0.14746
+                        rotation 0 0 1 0
+                        children [
+                          DEF FL_TOUCH TouchSensor {
+                            children [
+                              DEF FL_BALL_T Shape {
+                                appearance Appearance {
+                                }
+                                geometry Sphere {
+                                  radius 0.03
+                                }
+                              }
+                            ]
+                            name "FL_TOUCH"
+                            boundingObject USE FL_BALL_T
+                          }
+                          DEF FL_BALL Shape {
+                            appearance Appearance {
+                            }
+                            geometry Sphere {
+                              radius 0.03
+                            }
+                          }
+                          Shape {
+                            appearance DEF FL_4_material PBRAppearance {
+                              roughness 1
+                              metalness 0
+                            }
+                            geometry DEF FL_4 Mesh {
+                              url [
+                                "D:/WEBOTDEMO-BJW/my_project27-mpc-10+deepcamera_20240916newmodel/my_project4/protos/robot-Bigdog-A.SLDASM/meshes/FL_4.STL"
+                              ]
+                            }
+                          }
+                        ]
+                        name "FL_4"
+                        boundingObject USE FL_BALL
+                        physics Physics {
+                          density -1
+                          mass 0.034657
+                          centerOfMass [
+                            0.001789 0 -0.011456
+                          ]
+                          inertiaMatrix [
+                            5.640846e-06 8.217322e-06 6.993648e-06
+                            1.853846e-09 2.013052e-07 2.639487e-10
+                          ]
+                        }
+                      }
+                    ]
+                    name "FL_3"
+                    boundingObject USE FL_3_C
+                    physics Physics {
+                      density -1
+                      mass 0.10582
+                      centerOfMass [
+                        0.052437 0.016299 -0.063821
+                      ]
+                      inertiaMatrix [
+                        0.00037 0.00061 0.00025
+                        0 0.00029 0
+                      ]
+                    }
+                  }
+                }
+              ]
+              name "FL_2"
+              boundingObject USE FL_2_C
+              physics Physics {
+                density -1
+                mass 1.1103
+                centerOfMass [
+                  -0.033941 0.061444 -0.031616
+                ]
+                inertiaMatrix [
+                  0.00351 0.00607 0.00358
+                  0.00045 -0.00244 0.00042
+                ]
+              }
+            }
+          }
+        ]
+        name "FL_1"
+        boundingObject USE FL_1_C
+        physics Physics {
+          density -1
+          mass 0.33435
+          centerOfMass [
+            0.061256 -0.008521 0.000281
+          ]
+          inertiaMatrix [
+            0.00024 0.00041 0.00029
+            1e-05 0 0
+          ]
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        anchor -0.1393 -0.061 0
+      }
+      device [
+        RotationalMotor {
+          name "BR_hip_motor"
+          maxVelocity 50
+          minPosition -3.14
+          maxPosition 3.14
+          maxTorque 100
+        }
+        PositionSensor {
+          name "BR_hip_position_sensor"
+        }
+      ]
+      endPoint Solid {
+        translation -0.1393 -0.061 0
+        rotation 1 0 0 0
+        children [
+          DEF BR_1_C Transform {
+            translation -0.065 0.01 0
+            children [
+              Shape {
+                appearance PBRAppearance {
+                  transparency 1
+                }
+                geometry Cylinder {
+                  height 0.03
+                  radius 0.05
+                }
+              }
+            ]
+          }
+          Shape {
+            appearance DEF BR_1_material PBRAppearance {
+              baseColor 0.75294 0.75294 0.75294
+              roughness 1
+              metalness 0
+            }
+            geometry DEF BR_1 Mesh {
+              url [
+                "D:/WEBOTDEMO-BJW/my_project27-mpc-10+deepcamera_20240916newmodel/my_project4/protos/robot-Bigdog-A.SLDASM/meshes/BR_1.STL"
+              ]
+            }
+          }
+          HingeJoint {
+            jointParameters HingeJointParameters {
+              axis 0 -1 0
+              anchor -0.065 -0.0115 0
+            }
+            device [
+              RotationalMotor {
+                name "BR_leg_motor"
+                maxVelocity 50
+                minPosition -3.14
+                maxPosition 3.14
+                maxTorque 100
+              }
+              PositionSensor {
+                name "BR_leg_position_sensor"
+              }
+            ]
+            endPoint Solid {
+              translation -0.065 -0.0115 0
+              rotation 0 -1 0 0
+              children [
+                DEF BR_2_C Transform {
+                  translation -0.07 -0.08 -0.06
+                  rotation 0 1 0 -0.9162996938995747
+                  children [
+                    Shape {
+                      appearance PBRAppearance {
+                        transparency 1
+                      }
+                      geometry Box {
+                        size 0.15 0.02 0.02
+                      }
+                    }
+                  ]
+                }
+                Shape {
+                  appearance DEF BR_2_material PBRAppearance {
+                    baseColor 0.75294 0.75294 0.75294
+                    roughness 1
+                    metalness 0
+                  }
+                  geometry DEF BR_2 Mesh {
+                    url [
+                      "D:/WEBOTDEMO-BJW/my_project27-mpc-10+deepcamera_20240916newmodel/my_project4/protos/robot-Bigdog-A.SLDASM/meshes/BR_2.STL"
+                    ]
+                  }
+                }
+                HingeJoint {
+                  jointParameters HingeJointParameters {
+                    axis 0 -1 0
+                    anchor -0.1247 -0.0572 -0.14861
+                  }
+                  device [
+                    RotationalMotor {
+                      name "BR_foot_motor"
+                      maxVelocity 50
+                      minPosition -3.14
+                      maxPosition 3.14
+                      maxTorque 100
+                    }
+                    PositionSensor {
+                      name "BR_foot_position_sensor"
+                    }
+                  ]
+                  endPoint Solid {
+                    translation -0.1247 -0.0572 -0.14861
+                    rotation 0 -1 0 0
+                    children [
+                      DEF BR_3_C Transform {
+                        translation 0.05 -0.02 -0.06
+                        rotation 0 1 0 0.7854003061004253
+                        children [
+                          Shape {
+                            appearance PBRAppearance {
+                              transparency 1
+                            }
+                            geometry Box {
+                              size 0.12 0.02 0.02
+                            }
+                          }
+                        ]
+                      }
+                      Shape {
+                        appearance DEF BR_3_material PBRAppearance {
+                          baseColor 0.75294 0.75294 0.75294
+                          roughness 1
+                          metalness 0
+                        }
+                        geometry DEF BR_3 Mesh {
+                          url [
+                            "D:/WEBOTDEMO-BJW/my_project27-mpc-10+deepcamera_20240916newmodel/my_project4/protos/robot-Bigdog-A.SLDASM/meshes/BR_3.STL"
+                          ]
+                        }
+                      }
+                      Solid {
+                        translation 0.1122 -0.0163 -0.14759
+                        rotation 0 0 1 0
+                        children [
+                          TouchSensor {
+                            children [
+                              DEF BR_BALL_T Shape {
+                                appearance Appearance {
+                                }
+                                geometry Sphere {
+                                  radius 0.03
+                                }
+                              }
+                            ]
+                            name "BR_TOUCH"
+                            boundingObject USE BR_BALL_T
+                          }
+                          DEF BR_BALL Shape {
+                            appearance Appearance {
+                            }
+                            geometry Sphere {
+                              radius 0.03
+                            }
+                          }
+                          Shape {
+                            appearance DEF BR_4_material PBRAppearance {
+                              roughness 1
+                              metalness 0
+                            }
+                            geometry DEF BR_4 Mesh {
+                              url [
+                                "D:/WEBOTDEMO-BJW/my_project27-mpc-10+deepcamera_20240916newmodel/my_project4/protos/robot-Bigdog-A.SLDASM/meshes/BR_4.STL"
+                              ]
+                            }
+                          }
+                        ]
+                        name "BR_4"
+                        boundingObject USE BR_BALL
+                        physics Physics {
+                          density -1
+                          mass 0.034657
+                          centerOfMass [
+                            0.001775 0 -0.011458
+                          ]
+                          inertiaMatrix [
+                            5.640358e-06 8.217323e-06 6.994135e-06
+                            1.85418e-09 1.996607e-07 2.616732e-10
+                          ]
+                        }
+                      }
+                    ]
+                    name "BR_3"
+                    boundingObject USE BR_3_C
+                    physics Physics {
+                      density -1
+                      mass 0.10582
+                      centerOfMass [
+                        0.052359 -0.016301 -0.063885
+                      ]
+                      inertiaMatrix [
+                        0.00037 0.00061 0.00025
+                        0 0.00029 0
+                      ]
+                    }
+                  }
+                }
+              ]
+              name "BR_2"
+              boundingObject USE BR_2_C
+              physics Physics {
+                density -1
+                mass 1.1104
+                centerOfMass [
+                  -0.033941 -0.061444 -0.031612
+                ]
+                inertiaMatrix [
+                  0.00351 0.00607 0.00358
+                  -0.00045 -0.00244 -0.00042
+                ]
+              }
+            }
+          }
+        ]
+        name "BR_1"
+        boundingObject USE BR_1_C
+        physics Physics {
+          density -1
+          mass 0.33435
+          centerOfMass [
+            -0.061256 0.008521 0.000281
+          ]
+          inertiaMatrix [
+            0.00024 0.00041 0.00029
+            1e-05 0 0
+          ]
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        anchor -0.1393 0.061 0
+      }
+      device [
+        RotationalMotor {
+          name "BL_hip_motor"
+          maxVelocity 50
+          minPosition -3.14
+          maxPosition 3.14
+          maxTorque 100
+        }
+        PositionSensor {
+          name "BL_hip_position_sensor"
+        }
+      ]
+      endPoint Solid {
+        translation -0.1393 0.061 0
+        rotation 1 0 0 0
+        children [
+          DEF BL_1_C Transform {
+            translation -0.065 -0.01 0
+            children [
+              Shape {
+                appearance PBRAppearance {
+                  transparency 1
+                }
+                geometry Cylinder {
+                  height 0.03
+                  radius 0.05
+                }
+              }
+            ]
+          }
+          Shape {
+            appearance DEF BL_1_material PBRAppearance {
+              baseColor 0.75294 0.75294 0.75294
+              roughness 1
+              metalness 0
+            }
+            geometry DEF BL_1 Mesh {
+              url [
+                "D:/WEBOTDEMO-BJW/my_project27-mpc-10+deepcamera_20240916newmodel/my_project4/protos/robot-Bigdog-A.SLDASM/meshes/BL_1.STL"
+              ]
+            }
+          }
+          HingeJoint {
+            jointParameters HingeJointParameters {
+              axis 0 -1 0
+              anchor -0.065 0.0115 0
+            }
+            device [
+              RotationalMotor {
+                name "BL_leg_motor"
+                maxVelocity 50
+                minPosition -3.14
+                maxPosition 3.14
+                maxTorque 100
+              }
+              PositionSensor {
+                name "BL_leg_position_sensor"
+              }
+            ]
+            endPoint Solid {
+              translation -0.065 0.0115 0
+              rotation 0 -1 0 0
+              children [
+                DEF BL_2_C Transform {
+                  translation -0.07 0.08 -0.06
+                  rotation 0 1 0 -0.9162996938995747
+                  children [
+                    Shape {
+                      appearance PBRAppearance {
+                        transparency 1
+                      }
+                      geometry Box {
+                        size 0.15 0.02 0.02
+                      }
+                    }
+                  ]
+                }
+                Shape {
+                  appearance DEF BL_2_material PBRAppearance {
+                    baseColor 0.75294 0.75294 0.75294
+                    roughness 1
+                    metalness 0
+                  }
+                  geometry DEF BL_2 Mesh {
+                    url [
+                      "D:/WEBOTDEMO-BJW/my_project27-mpc-10+deepcamera_20240916newmodel/my_project4/protos/robot-Bigdog-A.SLDASM/meshes/BL_2.STL"
+                    ]
+                  }
+                }
+                HingeJoint {
+                  jointParameters HingeJointParameters {
+                    axis 0 -1 0
+                    anchor -0.1247 0.0572 -0.14861
+                  }
+                  device [
+                    RotationalMotor {
+                      name "BL_foot_motor"
+                      maxVelocity 50
+                      minPosition -3.14
+                      maxPosition 3.14
+                      maxTorque 100
+                    }
+                    PositionSensor {
+                      name "BL_foot_position_sensor"
+                    }
+                  ]
+                  endPoint Solid {
+                    translation -0.1247 0.0572 -0.14861
+                    rotation 0 -1 0 0
+                    children [
+                      DEF BL_3_C Transform {
+                        translation 0.05 0.02 -0.06
+                        rotation 0 1 0 0.7854003061004253
+                        children [
+                          Shape {
+                            appearance PBRAppearance {
+                              transparency 1
+                            }
+                            geometry Box {
+                              size 0.12 0.02 0.02
+                            }
+                          }
+                        ]
+                      }
+                      Shape {
+                        appearance DEF BL_3_material PBRAppearance {
+                          baseColor 0.75294 0.75294 0.75294
+                          roughness 1
+                          metalness 0
+                        }
+                        geometry DEF BL_3 Mesh {
+                          url [
+                            "D:/WEBOTDEMO-BJW/my_project27-mpc-10+deepcamera_20240916newmodel/my_project4/protos/robot-Bigdog-A.SLDASM/meshes/BL_3.STL"
+                          ]
+                        }
+                      }
+                      Solid {
+                        translation 0.1122 0.0163 -0.1476
+                        rotation 0 0 1 0
+                        children [
+                          TouchSensor {
+                            children [
+                              DEF BL_BALL_T Shape {
+                                appearance Appearance {
+                                }
+                                geometry Sphere {
+                                  radius 0.03
+                                }
+                              }
+                            ]
+                            name "BL_TOUCH"
+                            boundingObject USE BL_BALL_T
+                          }
+                          DEF BL_BALL Shape {
+                            appearance Appearance {
+                            }
+                            geometry Sphere {
+                              radius 0.03
+                            }
+                          }
+                          Shape {
+                            appearance DEF BL_4_material PBRAppearance {
+                              roughness 1
+                              metalness 0
+                            }
+                            geometry DEF BL_4 Mesh {
+                              url [
+                                "D:/WEBOTDEMO-BJW/my_project27-mpc-10+deepcamera_20240916newmodel/my_project4/protos/robot-Bigdog-A.SLDASM/meshes/BL_4.STL"
+                              ]
+                            }
+                          }
+                        ]
+                        name "BL_4"
+                        boundingObject USE BL_BALL
+                        physics Physics {
+                          density -1
+                          mass 0.034657
+                          centerOfMass [
+                            0.001775 0 -0.011458
+                          ]
+                          inertiaMatrix [
+                            5.64035e-06 8.217323e-06 6.994144e-06
+                            1.854186e-09 1.996315e-07 2.616328e-10
+                          ]
+                        }
+                      }
+                    ]
+                    name "BL_3"
+                    boundingObject USE BL_3_C
+                    physics Physics {
+                      density -1
+                      mass 0.10582
+                      centerOfMass [
+                        0.052358 0.016299 -0.063886
+                      ]
+                      inertiaMatrix [
+                        0.00037 0.00061 0.00025
+                        0 0.00029 0
+                      ]
+                    }
+                  }
+                }
+              ]
+              name "BL_2"
+              boundingObject USE BL_2_C
+              physics Physics {
+                density -1
+                mass 1.1103
+                centerOfMass [
+                  -0.033941 0.061444 -0.031616
+                ]
+                inertiaMatrix [
+                  0.00351 0.00607 0.00358
+                  0.00045 -0.00244 0.00042
+                ]
+              }
+            }
+          }
+        ]
+        name "BL_1"
+        boundingObject USE BL_1_C
+        physics Physics {
+          density -1
+          mass 0.33434
+          centerOfMass [
+            -0.061252 -0.008521 0.000312
+          ]
+          inertiaMatrix [
+            0.00024 0.00041 0.00029
+            -1e-05 0 0
+          ]
+        }
+      }
+    }
+  ]
+  name "Bigdog"
+  boundingObject USE BODY_BOX
+  physics Physics {
+    density -1
+    mass 7.1237
+    centerOfMass [
+      -7e-06 1e-06 -0.003395
+    ]
+    inertiaMatrix [
+      0.05681 0.07575 0.10574
+      0 -1e-05 -1e-05
+    ]
+  }
+  controller "my_BIGDOG4_MPC"
+}

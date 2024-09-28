@@ -1,0 +1,762 @@
+#VRML_SIM R2022b utf8
+# license: Apache License 2.0
+# license url: http://www.apache.org/licenses/LICENSE-2.0
+# This is a proto file for Webots for the Bigdog
+# Extracted from: D:/WEBOTDEMO-BJW/my_project27-mpc-10+deepcamera_20240916newmodel/my_project4/protos/robot-Bigdog-A.SLDASM/urdf/robot-Bigdog-A.SLDASM.urdf
+
+PROTO Bigdog [
+  field  SFVec3f     translation     0 0 0
+  field  SFRotation  rotation        0 0 1 0
+  field  SFString    name            "Bigdog"  # Is `Robot.name`.
+  field  SFString    controller      "void"    # Is `Robot.controller`.
+  field  MFString    controllerArgs  []        # Is `Robot.controllerArgs`.
+  field  SFString    customData      ""        # Is `Robot.customData`.
+  field  SFBool      supervisor      FALSE     # Is `Robot.supervisor`.
+  field  SFBool      synchronization TRUE      # Is `Robot.synchronization`.
+  field  SFBool      selfCollision   FALSE     # Is `Robot.selfCollision`.
+]
+{
+  Robot {
+    translation IS translation
+    rotation IS rotation
+    controller IS controller
+    controllerArgs IS controllerArgs
+    customData IS customData
+    supervisor IS supervisor
+    synchronization IS synchronization
+    selfCollision IS selfCollision
+    children [
+      Shape {
+        appearance DEF BODY_material PBRAppearance {
+          baseColor 0.752940 0.752940 0.752940
+          transparency 0.000000
+          roughness 1.000000
+          metalness 0
+          emissiveColor 0.000000 0.000000 0.000000
+        }
+        geometry DEF BODY Mesh {
+       url "../../BODY.STL"
+
+        }
+      }
+      HingeJoint {
+        jointParameters HingeJointParameters {
+          axis 1.000000 0.000000 0.000000
+          anchor 0.139300 -0.061000 0.000000
+          dampingConstant 0.0
+          staticFriction 0.0
+        }
+        device [
+          RotationalMotor {
+            name "FR_1A"
+            maxVelocity 50.0
+            minPosition -3.14
+            maxPosition 3.14
+            maxTorque 100.0
+          }
+          PositionSensor {
+            name "FR_1A_sensor"
+          }
+        ]
+        endPoint Solid {
+          translation 0.139300 -0.061000 0.000000
+          rotation 0.000000 0.000000 1.000000 0.000000
+          children [
+            Shape {
+              appearance DEF FR_1_material PBRAppearance {
+                baseColor 0.752940 0.752940 0.752940
+                transparency 0.000000
+                roughness 1.000000
+                metalness 0
+                emissiveColor 0.000000 0.000000 0.000000
+              }
+              geometry DEF FR_1 Mesh {
+                url "../../FR_1.STL"
+              }
+            }
+            HingeJoint {
+              jointParameters HingeJointParameters {
+                axis 0.000000 1.000000 0.000000
+                anchor 0.065000 -0.011500 0.000000
+                dampingConstant 0.0
+                staticFriction 0.0
+              }
+              device [
+                RotationalMotor {
+                  name "FR_2A"
+                  maxVelocity 50.0
+                  minPosition -3.14
+                  maxPosition 3.14
+                  maxTorque 100.0
+                }
+                PositionSensor {
+                  name "FR_2A_sensor"
+                }
+              ]
+              endPoint Solid {
+                translation 0.065000 -0.011500 0.000000
+                rotation 0.000000 0.000000 1.000000 0.000000
+                children [
+                  Shape {
+                    appearance DEF FR_2_material PBRAppearance {
+                      baseColor 0.752940 0.752940 0.752940
+                      transparency 0.000000
+                      roughness 1.000000
+                      metalness 0
+                      emissiveColor 0.000000 0.000000 0.000000
+                    }
+                    geometry DEF FR_2 Mesh {
+                      url "../../FR_2.STL"
+                    }
+                  }
+                  HingeJoint {
+                    jointParameters HingeJointParameters {
+                      axis 0.000000 1.000000 0.000000
+                      anchor -0.124700 -0.057200 -0.148610
+                      dampingConstant 0.0
+                      staticFriction 0.0
+                    }
+                    device [
+                      RotationalMotor {
+                        name "FR_3A"
+                        maxVelocity 50.0
+                        minPosition -3.14
+                        maxPosition 3.14
+                        maxTorque 100.0
+                      }
+                      PositionSensor {
+                        name "FR_3A_sensor"
+                      }
+                    ]
+                    endPoint Solid {
+                      translation -0.124700 -0.057200 -0.148610
+                      rotation 0.000000 0.000000 1.000000 0.000000
+                      children [
+                        Shape {
+                          appearance DEF FR_3_material PBRAppearance {
+                            baseColor 0.752940 0.752940 0.752940
+                            transparency 0.000000
+                            roughness 1.000000
+                            metalness 0
+                            emissiveColor 0.000000 0.000000 0.000000
+                          }
+                          geometry DEF FR_3 Mesh {
+                            url "../../FR_3.STL"
+                          }
+                        }
+                        Solid {
+                          translation 0.112220 -0.016300 -0.147580
+                          rotation 0.000000 0.000000 1.000000 0.000000
+                          children [
+                            Shape {
+                              appearance DEF FR_4_material PBRAppearance {
+                                baseColor 1.000000 1.000000 1.000000
+                                transparency 0.000000
+                                roughness 1.000000
+                                metalness 0
+                                emissiveColor 0.000000 0.000000 0.000000
+                              }
+                              geometry DEF FR_4 Mesh {
+                                url "../../FR_4.STL"
+                              }
+                            }
+                          ]
+                          name "FR_4"
+                          boundingObject USE FR_4
+                          physics Physics {
+                            density -1
+                            mass 0.034657
+                            centerOfMass [ 0.001777 0.000000 -0.011458 ]
+                            inertiaMatrix [
+                              5.640400e-06 8.217300e-06 6.994100e-06
+                              1.854100e-09 1.998400e-07 2.619200e-10
+                            ]
+                          }
+                        }
+                      ]
+                      name "FR_3"
+                      boundingObject USE FR_3
+                      physics Physics {
+                        density -1
+                        mass 0.10582
+                        centerOfMass [ 0.052368 -0.016301 -0.063878 ]
+                        inertiaMatrix [
+                          3.700000e-04 6.100000e-04 2.500000e-04
+                          0.000000e+00 2.900000e-04 0.000000e+00
+                        ]
+                      }
+                    }
+                  }
+                ]
+                name "FR_2"
+                boundingObject USE FR_2
+                physics Physics {
+                  density -1
+                  mass 1.110400
+                  centerOfMass [ -0.033941 -0.061444 -0.031612 ]
+                  inertiaMatrix [
+                    3.510000e-03 6.070000e-03 3.580000e-03
+                    -4.500000e-04 -2.440000e-03 -4.200000e-04
+                  ]
+                }
+              }
+            }
+          ]
+          name "FR_1"
+          boundingObject USE FR_1
+          physics Physics {
+            density -1
+            mass 0.334340
+            centerOfMass [ 0.061252 0.008521 0.000312 ]
+            inertiaMatrix [
+              2.400000e-04 4.100000e-04 2.900000e-04
+              -1.000000e-05 0.000000e+00 0.000000e+00
+            ]
+          }
+        }
+      }
+      HingeJoint {
+        jointParameters HingeJointParameters {
+          axis 1.000000 0.000000 0.000000
+          anchor 0.139300 0.061000 0.000000
+          dampingConstant 0.0
+          staticFriction 0.0
+        }
+        device [
+          RotationalMotor {
+            name "FL_1A"
+            maxVelocity 50.0
+            minPosition -3.14
+            maxPosition 3.14
+            maxTorque 100.0
+          }
+          PositionSensor {
+            name "FL_1A_sensor"
+          }
+        ]
+        endPoint Solid {
+          translation 0.139300 0.061000 0.000000
+          rotation 0.000000 0.000000 1.000000 0.000000
+          children [
+            Shape {
+              appearance DEF FL_1_material PBRAppearance {
+                baseColor 0.752940 0.752940 0.752940
+                transparency 0.000000
+                roughness 1.000000
+                metalness 0
+                emissiveColor 0.000000 0.000000 0.000000
+              }
+              geometry DEF FL_1 Mesh {
+                url "../../FL_1.STL"
+              }
+            }
+            HingeJoint {
+              jointParameters HingeJointParameters {
+                axis 0.000000 1.000000 0.000000
+                anchor 0.065000 0.011500 0.000000
+                dampingConstant 0.0
+                staticFriction 0.0
+              }
+              device [
+                RotationalMotor {
+                  name "FL_2A"
+                  maxVelocity 50.0
+                  minPosition -3.14
+                  maxPosition 3.14
+                  maxTorque 100.0
+                }
+                PositionSensor {
+                  name "FL_2A_sensor"
+                }
+              ]
+              endPoint Solid {
+                translation 0.065000 0.011500 0.000000
+                rotation 0.000000 0.000000 1.000000 0.000000
+                children [
+                  Shape {
+                    appearance DEF FL_2_material PBRAppearance {
+                      baseColor 0.752940 0.752940 0.752940
+                      transparency 0.000000
+                      roughness 1.000000
+                      metalness 0
+                      emissiveColor 0.000000 0.000000 0.000000
+                    }
+                    geometry DEF FL_2 Mesh {
+                      url "../../FL_2.STL"
+                    }
+                  }
+                  HingeJoint {
+                    jointParameters HingeJointParameters {
+                      axis 0.000000 1.000000 0.000000
+                      anchor -0.124700 0.057200 -0.148610
+                      dampingConstant 0.0
+                      staticFriction 0.0
+                    }
+                    device [
+                      RotationalMotor {
+                        name "FL_3A"
+                        maxVelocity 50.0
+                        minPosition -3.14
+                        maxPosition 3.14
+                        maxTorque 100.0
+                      }
+                      PositionSensor {
+                        name "FL_3A_sensor"
+                      }
+                    ]
+                    endPoint Solid {
+                      translation -0.124700 0.057200 -0.148610
+                      rotation 0.000000 0.000000 1.000000 0.000000
+                      children [
+                        Shape {
+                          appearance DEF FL_3_material PBRAppearance {
+                            baseColor 0.752940 0.752940 0.752940
+                            transparency 0.000000
+                            roughness 1.000000
+                            metalness 0
+                            emissiveColor 0.000000 0.000000 0.000000
+                          }
+                          geometry DEF FL_3 Mesh {
+                            url "../../FL_3.STL"
+                          }
+                        }
+                        Solid {
+                          translation 0.112380 0.016300 -0.147460
+                          rotation 0.000000 0.000000 1.000000 0.000000
+                          children [
+                            Shape {
+                              appearance DEF FL_4_material PBRAppearance {
+                                baseColor 1.000000 1.000000 1.000000
+                                transparency 0.000000
+                                roughness 1.000000
+                                metalness 0
+                                emissiveColor 0.000000 0.000000 0.000000
+                              }
+                              geometry DEF FL_4 Mesh {
+                                url "../../FL_4.STL"
+                              }
+                            }
+                          ]
+                          name "FL_4"
+                          boundingObject USE FL_4
+                          physics Physics {
+                            density -1
+                            mass 0.034657
+                            centerOfMass [ 0.001789 0.000000 -0.011456 ]
+                            inertiaMatrix [
+                              5.640846e-06 8.217322e-06 6.993648e-06
+                              1.853846e-09 2.013052e-07 2.639487e-10
+                            ]
+                          }
+                        }
+                      ]
+                      name "FL_3"
+                      boundingObject USE FL_3
+                      physics Physics {
+                        density -1
+                        mass 0.10582
+                        centerOfMass [ 0.052437 0.016299 -0.063821 ]
+                         inertiaMatrix [
+                          3.700000e-04 6.100000e-04 2.500000e-04
+                          0.000000e+00 2.900000e-04 0.000000e+00
+
+                        ]
+                      }
+                    }
+                  }
+                ]
+                name "FL_2"
+                boundingObject USE FL_2
+                physics Physics {
+                  density -1
+                  mass 1.110300
+                  centerOfMass [ -0.033941 0.061444 -0.031616 ]
+                  inertiaMatrix [
+                    3.510000e-03 6.070000e-03 3.580000e-03
+                    4.500000e-04 -2.440000e-03 4.200000e-04
+                  ]
+                }
+              }
+            }
+          ]
+          name "FL_1"
+          boundingObject USE FL_1
+          physics Physics {
+            density -1
+            mass 0.334350
+            centerOfMass [ 0.061256 -0.008521 0.000281 ]
+            inertiaMatrix [
+              2.400000e-04 4.100000e-04 2.900000e-04
+              1.000000e-05 0.000000e+00 0.000000e+00
+            ]
+          }
+        }
+      }
+      HingeJoint {
+        jointParameters HingeJointParameters {
+          axis 1.000000 0.000000 0.000000
+          anchor -0.139300 -0.061000 0.000000
+          dampingConstant 0.0
+          staticFriction 0.0
+        }
+        device [
+          RotationalMotor {
+            name "BR_1A"
+            maxVelocity 50.0
+            minPosition -3.14
+            maxPosition 3.14
+            maxTorque 100.0
+          }
+          PositionSensor {
+            name "BR_1A_sensor"
+          }
+        ]
+        endPoint Solid {
+          translation -0.139300 -0.061000 0.000000
+          rotation 0.000000 0.000000 1.000000 0.000000
+          children [
+            Shape {
+              appearance DEF BR_1_material PBRAppearance {
+                baseColor 0.752940 0.752940 0.752940
+                transparency 0.000000
+                roughness 1.000000
+                metalness 0
+                emissiveColor 0.000000 0.000000 0.000000
+              }
+              geometry DEF BR_1 Mesh {
+                url "../../BR_1.STL"
+              }
+            }
+            HingeJoint {
+              jointParameters HingeJointParameters {
+                axis 0.000000 1.000000 0.000000
+                anchor -0.065000 -0.011500 0.000000
+                dampingConstant 0.0
+                staticFriction 0.0
+              }
+              device [
+                RotationalMotor {
+                  name "BR_2A"
+                  maxVelocity 50.0
+                  minPosition -3.14
+                  maxPosition 3.14
+                  maxTorque 100.0
+                }
+                PositionSensor {
+                  name "BR_2A_sensor"
+                }
+              ]
+              endPoint Solid {
+                translation -0.065000 -0.011500 0.000000
+                rotation 0.000000 0.000000 1.000000 0.000000
+                children [
+                  Shape {
+                    appearance DEF BR_2_material PBRAppearance {
+                      baseColor 0.752940 0.752940 0.752940
+                      transparency 0.000000
+                      roughness 1.000000
+                      metalness 0
+                      emissiveColor 0.000000 0.000000 0.000000
+                    }
+                    geometry DEF BR_2 Mesh {
+                      url "../../BR_2.STL"
+                    }
+                  }
+                  HingeJoint {
+                    jointParameters HingeJointParameters {
+                      axis 0.000000 1.000000 0.000000
+                      anchor -0.124700 -0.057200 -0.148610
+                      dampingConstant 0.0
+                      staticFriction 0.0
+                    }
+                    device [
+                      RotationalMotor {
+                        name "BR_3A"
+                        maxVelocity 50.0
+                        minPosition -3.14
+                        maxPosition 3.14
+                        maxTorque 100.0
+                      }
+                      PositionSensor {
+                        name "BR_3A_sensor"
+                      }
+                    ]
+                    endPoint Solid {
+                      translation -0.124700 -0.057200 -0.148610
+                      rotation 0.000000 0.000000 1.000000 0.000000
+                      children [
+                        Shape {
+                          appearance DEF BR_3_material PBRAppearance {
+                            baseColor 0.752940 0.752940 0.752940
+                            transparency 0.000000
+                            roughness 1.000000
+                            metalness 0
+                            emissiveColor 0.000000 0.000000 0.000000
+                          }
+                          geometry DEF BR_3 Mesh {
+                            url "../../BR_3.STL"
+                          }
+                        }
+                        Solid {
+                          translation 0.112200 -0.016300 -0.147590
+                          rotation 0.000000 0.000000 1.000000 0.000000
+                          children [
+                            Shape {
+                              appearance DEF BR_4_material PBRAppearance {
+                                baseColor 1.000000 1.000000 1.000000
+                                transparency 0.000000
+                                roughness 1.000000
+                                metalness 0
+                                emissiveColor 0.000000 0.000000 0.000000
+                              }
+                              geometry DEF BR_4 Mesh {
+                                url "../../BR_4.STL"
+                              }
+                            }
+                          ]
+                          name "BR_4"
+                          boundingObject USE BR_4
+                          physics Physics {
+                            density -1
+                            mass 0.034657
+                            centerOfMass [ 0.001775 0.000000 -0.011458 ]
+                            inertiaMatrix [
+                              5.640358e-06 8.217323e-06 6.994135e-06
+                              1.854180e-09 1.996607e-07 2.616732e-10
+                            ]
+                          }
+                        }
+                      ]
+                      name "BR_3"
+                      boundingObject USE BR_3
+                      physics Physics {
+                        density -1
+                        mass 0.10582
+                        centerOfMass [ 0.052359 -0.016301 -0.063885 ]
+                        inertiaMatrix [
+                          3.700000e-04 6.100000e-04 2.500000e-04
+                          0.000000e+00 2.900000e-04 0.000000e+00
+
+                        ]
+                      }
+                    }
+                  }
+                ]
+                name "BR_2"
+                boundingObject USE BR_2
+                physics Physics {
+                  density -1
+                  mass 1.110400
+                  centerOfMass [ -0.033941 -0.061444 -0.031612 ]
+                  inertiaMatrix [
+                    3.510000e-03 6.070000e-03 3.580000e-03
+                    -4.500000e-04 -2.440000e-03 -4.200000e-04
+                  ]
+                }
+              }
+            }
+          ]
+          name "BR_1"
+          boundingObject USE BR_1
+          physics Physics {
+            density -1
+            mass 0.334350
+            centerOfMass [ -0.061256 0.008521 0.000281 ]
+            inertiaMatrix [
+              2.400000e-04 4.100000e-04 2.900000e-04
+              1.000000e-05 0.000000e+00 0.000000e+00
+            ]
+          }
+        }
+      }
+      HingeJoint {
+        jointParameters HingeJointParameters {
+          axis 1.000000 0.000000 0.000000
+          anchor -0.139300 0.061000 0.000000
+          dampingConstant 0.0
+          staticFriction 0.0
+        }
+        device [
+          RotationalMotor {
+            name "BL_1A"
+            maxVelocity 50.0
+            minPosition -3.14
+            maxPosition 3.14
+            maxTorque 100.0
+          }
+          PositionSensor {
+            name "BL_1A_sensor"
+          }
+        ]
+        endPoint Solid {
+          translation -0.139300 0.061000 0.000000
+          rotation 0.000000 0.000000 1.000000 0.000000
+          children [
+            Shape {
+              appearance DEF BL_1_material PBRAppearance {
+                baseColor 0.752940 0.752940 0.752940
+                transparency 0.000000
+                roughness 1.000000
+                metalness 0
+                emissiveColor 0.000000 0.000000 0.000000
+              }
+              geometry DEF BL_1 Mesh {
+                url "../../BL_1.STL"
+              }
+            }
+            HingeJoint {
+              jointParameters HingeJointParameters {
+                axis 0.000000 1.000000 0.000000
+                anchor -0.065000 0.011500 0.000000
+                dampingConstant 0.0
+                staticFriction 0.0
+              }
+              device [
+                RotationalMotor {
+                  name "BL_2A"
+                  maxVelocity 50.0
+                  minPosition -3.14
+                  maxPosition 3.14
+                  maxTorque 100.0
+                }
+                PositionSensor {
+                  name "BL_2A_sensor"
+                }
+              ]
+              endPoint Solid {
+                translation -0.065000 0.011500 0.000000
+                rotation 0.000000 0.000000 1.000000 0.000000
+                children [
+                  Shape {
+                    appearance DEF BL_2_material PBRAppearance {
+                      baseColor 0.752940 0.752940 0.752940
+                      transparency 0.000000
+                      roughness 1.000000
+                      metalness 0
+                      emissiveColor 0.000000 0.000000 0.000000
+                    }
+                    geometry DEF BL_2 Mesh {
+                      url "../../BL_2.STL"
+                    }
+                  }
+                  HingeJoint {
+                    jointParameters HingeJointParameters {
+                      axis 0.000000 1.000000 0.000000
+                      anchor -0.124700 0.057200 -0.148610
+                      dampingConstant 0.0
+                      staticFriction 0.0
+                    }
+                    device [
+                      RotationalMotor {
+                        name "BL_3A"
+                        maxVelocity 50.0
+                        minPosition -3.14
+                        maxPosition 3.14
+                        maxTorque 100.0
+                      }
+                      PositionSensor {
+                        name "BL_3A_sensor"
+                      }
+                    ]
+                    endPoint Solid {
+                      translation -0.124700 0.057200 -0.148610
+                      rotation 0.000000 0.000000 1.000000 0.000000
+                      children [
+                        Shape {
+                          appearance DEF BL_3_material PBRAppearance {
+                            baseColor 0.752940 0.752940 0.752940
+                            transparency 0.000000
+                            roughness 1.000000
+                            metalness 0
+                            emissiveColor 0.000000 0.000000 0.000000
+                          }
+                          geometry DEF BL_3 Mesh {
+                            url "../../BL_3.STL"
+                          }
+                        }
+                        Solid {
+                          translation 0.112200 0.016300 -0.147600
+                          rotation 0.000000 0.000000 1.000000 0.000000
+                          children [
+                            Shape {
+                              appearance DEF BL_4_material PBRAppearance {
+                                baseColor 1.000000 1.000000 1.000000
+                                transparency 0.000000
+                                roughness 1.000000
+                                metalness 0
+                                emissiveColor 0.000000 0.000000 0.000000
+                              }
+                              geometry DEF BL_4 Mesh {
+                                url "../../BL_4.STL"
+                              }
+                            }
+                          ]
+                          name "BL_4"
+                          boundingObject USE BL_4
+                          physics Physics {
+                            density -1
+                            mass 0.034657
+                            centerOfMass [ 0.001775 0.000000 -0.011458 ]
+                            inertiaMatrix [
+                              5.640350e-06 8.217323e-06 6.994144e-06
+                              1.854186e-09 1.996315e-07 2.616328e-10
+                            ]
+                          }
+                        }
+                      ]
+                      name "BL_3"
+                      boundingObject USE BL_3
+                      physics Physics {
+                        density -1
+                        mass 0.10582
+                        centerOfMass [ 0.052358 0.016299 -0.063886 ]
+                        inertiaMatrix [
+                          3.700000e-04 6.100000e-04 2.500000e-04
+                          0.000000e+00 2.900000e-04 0.000000e+00
+
+                        ]
+                      }
+                    }
+                  }
+                ]
+                name "BL_2"
+                boundingObject USE BL_2
+                physics Physics {
+                  density -1
+                  mass 1.110300
+                  centerOfMass [ -0.033941 0.061444 -0.031616 ]
+                  inertiaMatrix [
+                    3.510000e-03 6.070000e-03 3.580000e-03
+                    4.500000e-04 -2.440000e-03 4.200000e-04
+                  ]
+                }
+              }
+            }
+          ]
+          name "BL_1"
+          boundingObject USE BL_1
+          physics Physics {
+            density -1
+            mass 0.334340
+            centerOfMass [ -0.061252 -0.008521 0.000312 ]
+            inertiaMatrix [
+              2.400000e-04 4.100000e-04 2.900000e-04
+              -1.000000e-05 0.000000e+00 0.000000e+00
+            ]
+          }
+        }
+      }
+    ]
+    name IS name
+    boundingObject USE BODY
+    physics Physics {
+      density -1
+      mass 7.123700
+      centerOfMass [ -0.000007 0.000001 -0.003395 ]
+      inertiaMatrix [
+        5.681000e-02 7.575000e-02 1.057400e-01
+        0.000000e+00 -1.000000e-05 -1.000000e-05
+      ]
+    }
+  }
+}
