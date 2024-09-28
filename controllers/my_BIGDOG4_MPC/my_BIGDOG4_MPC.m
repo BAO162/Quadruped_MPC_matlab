@@ -1,4 +1,4 @@
-%如果您有用请给个star  -- "Create from Bao and Meng"
+%如果您有用请给个star  项目地址：https://github.com/BAO162/Quadruped_MPC_matlab.git  -- "Create from Bao and Meng"
 TIME_STEP = 2;
 t=0;
 wb_keyboard_enable(TIME_STEP);
