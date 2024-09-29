@@ -375,7 +375,7 @@ Robot {
       }
       geometry DEF BODY Mesh {
         url [
-          "D:/WEBOTDEMO-BJW/my_project27-mpc-10+deepcamera_20240916newmodel/my_project4/protos/robot-Bigdog-A.SLDASM/meshes/BODY.STL"
+          "../protos/robot-Bigdog-A.SLDASM/meshes/BODY.STL"
         ]
       }
     }
@@ -421,7 +421,7 @@ Robot {
             }
             geometry DEF FR_1 Mesh {
               url [
-                "D:/WEBOTDEMO-BJW/my_project27-mpc-10+deepcamera_20240916newmodel/my_project4/protos/robot-Bigdog-A.SLDASM/meshes/FR_1.STL"
+                "../protos/robot-Bigdog-A.SLDASM/meshes/FR_1.STL"
               ]
             }
           }
@@ -468,7 +468,7 @@ Robot {
                   }
                   geometry DEF FR_2 Mesh {
                     url [
-                      "D:/WEBOTDEMO-BJW/my_project27-mpc-10+deepcamera_20240916newmodel/my_project4/protos/robot-Bigdog-A.SLDASM/meshes/FR_2.STL"
+                      "../protos/robot-Bigdog-A.SLDASM/meshes/FR_2.STL"
                     ]
                   }
                 }
@@ -515,7 +515,7 @@ Robot {
                         }
                         geometry DEF FR_3 Mesh {
                           url [
-                            "D:/WEBOTDEMO-BJW/my_project27-mpc-10+deepcamera_20240916newmodel/my_project4/protos/robot-Bigdog-A.SLDASM/meshes/FR_3.STL"
+                            "../protos/robot-Bigdog-A.SLDASM/meshes/FR_3.STL"
                           ]
                         }
                       }
@@ -543,7 +543,7 @@ Robot {
                             }
                             geometry DEF FR_4 Mesh {
                               url [
-                                "D:/WEBOTDEMO-BJW/my_project27-mpc-10+deepcamera_20240916newmodel/my_project4/protos/robot-Bigdog-A.SLDASM/meshes/FR_4.STL"
+                                "../protos/robot-Bigdog-A.SLDASM/meshes/FR_4.STL"
                               ]
                             }
                           }
@@ -659,7 +659,7 @@ Robot {
             }
             geometry DEF FL_1 Mesh {
               url [
-                "D:/WEBOTDEMO-BJW/my_project27-mpc-10+deepcamera_20240916newmodel/my_project4/protos/robot-Bigdog-A.SLDASM/meshes/FL_1.STL"
+                "../protos/robot-Bigdog-A.SLDASM/meshes/FL_1.STL"
               ]
             }
           }
@@ -706,7 +706,7 @@ Robot {
                   }
                   geometry DEF FL_2 Mesh {
                     url [
-                      "D:/WEBOTDEMO-BJW/my_project27-mpc-10+deepcamera_20240916newmodel/my_project4/protos/robot-Bigdog-A.SLDASM/meshes/FL_2.STL"
+                      "../protos/robot-Bigdog-A.SLDASM/meshes/FL_2.STL"
                     ]
                   }
                 }
@@ -753,7 +753,7 @@ Robot {
                         }
                         geometry DEF FL_3 Mesh {
                           url [
-                            "D:/WEBOTDEMO-BJW/my_project27-mpc-10+deepcamera_20240916newmodel/my_project4/protos/robot-Bigdog-A.SLDASM/meshes/FL_3.STL"
+                            "../protos/robot-Bigdog-A.SLDASM/meshes/FL_3.STL"
                           ]
                         }
                       }
@@ -788,7 +788,7 @@ Robot {
                             }
                             geometry DEF FL_4 Mesh {
                               url [
-                                "D:/WEBOTDEMO-BJW/my_project27-mpc-10+deepcamera_20240916newmodel/my_project4/protos/robot-Bigdog-A.SLDASM/meshes/FL_4.STL"
+                                "../protos/robot-Bigdog-A.SLDASM/meshes/FL_4.STL"
                               ]
                             }
                           }
@@ -897,7 +897,7 @@ Robot {
             }
             geometry DEF BR_1 Mesh {
               url [
-                "D:/WEBOTDEMO-BJW/my_project27-mpc-10+deepcamera_20240916newmodel/my_project4/protos/robot-Bigdog-A.SLDASM/meshes/BR_1.STL"
+                "../protos/robot-Bigdog-A.SLDASM/meshes/BR_1.STL"
               ]
             }
           }
@@ -944,7 +944,7 @@ Robot {
                   }
                   geometry DEF BR_2 Mesh {
                     url [
-                      "D:/WEBOTDEMO-BJW/my_project27-mpc-10+deepcamera_20240916newmodel/my_project4/protos/robot-Bigdog-A.SLDASM/meshes/BR_2.STL"
+                      "../protos/robot-Bigdog-A.SLDASM/meshes/BR_2.STL"
                     ]
                   }
                 }
@@ -991,7 +991,7 @@ Robot {
                         }
                         geometry DEF BR_3 Mesh {
                           url [
-                            "D:/WEBOTDEMO-BJW/my_project27-mpc-10+deepcamera_20240916newmodel/my_project4/protos/robot-Bigdog-A.SLDASM/meshes/BR_3.STL"
+                            "../protos/robot-Bigdog-A.SLDASM/meshes/BR_3.STL"
                           ]
                         }
                       }
@@ -1026,7 +1026,7 @@ Robot {
                             }
                             geometry DEF BR_4 Mesh {
                               url [
-                                "D:/WEBOTDEMO-BJW/my_project27-mpc-10+deepcamera_20240916newmodel/my_project4/protos/robot-Bigdog-A.SLDASM/meshes/BR_4.STL"
+                                "../protos/robot-Bigdog-A.SLDASM/meshes/BR_4.STL"
                               ]
                             }
                           }
@@ -1135,7 +1135,7 @@ Robot {
             }
             geometry DEF BL_1 Mesh {
               url [
-                "D:/WEBOTDEMO-BJW/my_project27-mpc-10+deepcamera_20240916newmodel/my_project4/protos/robot-Bigdog-A.SLDASM/meshes/BL_1.STL"
+                "../protos/robot-Bigdog-A.SLDASM/meshes/BL_1.STL"
               ]
             }
           }
@@ -1182,7 +1182,7 @@ Robot {
                   }
                   geometry DEF BL_2 Mesh {
                     url [
-                      "D:/WEBOTDEMO-BJW/my_project27-mpc-10+deepcamera_20240916newmodel/my_project4/protos/robot-Bigdog-A.SLDASM/meshes/BL_2.STL"
+                      "../protos/robot-Bigdog-A.SLDASM/meshes/BL_2.STL"
                     ]
                   }
                 }
@@ -1229,7 +1229,7 @@ Robot {
                         }
                         geometry DEF BL_3 Mesh {
                           url [
-                            "D:/WEBOTDEMO-BJW/my_project27-mpc-10+deepcamera_20240916newmodel/my_project4/protos/robot-Bigdog-A.SLDASM/meshes/BL_3.STL"
+                            "../protos/robot-Bigdog-A.SLDASM/meshes/BL_3.STL"
                           ]
                         }
                       }
@@ -1264,7 +1264,7 @@ Robot {
                             }
                             geometry DEF BL_4 Mesh {
                               url [
-                                "D:/WEBOTDEMO-BJW/my_project27-mpc-10+deepcamera_20240916newmodel/my_project4/protos/robot-Bigdog-A.SLDASM/meshes/BL_4.STL"
+                                "../protos/robot-Bigdog-A.SLDASM/meshes/BL_4.STL"
                               ]
                             }
                           }
