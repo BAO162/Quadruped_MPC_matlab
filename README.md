@@ -1,4 +1,4 @@
-本项目在windows系统上运行 weobts+matlab的四足机器人MPC控制 13.5kg模型 
+本项目在windows系统上运行 webots+matlab的四足机器人MPC控制 13.5kg模型 
 
 
 只用到QPOASES库 其他均为显式代码 供初学者入门使用 控制实时性暂时难以保证
